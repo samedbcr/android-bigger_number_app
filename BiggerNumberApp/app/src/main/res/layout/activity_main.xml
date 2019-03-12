@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF9800"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/txtQuestion"
+        android:layout_width="307dp"
+        android:layout_height="71dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/font_bold"
+        android:text="Which one is bigger?"
+        android:textColor="#000000"
+        android:textSize="55dip" />
+
+    <Button
+        android:id="@+id/btnLeft"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/txtScore"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/double_border"
+        android:text="Button1"
+        android:textSize="30dp"
+        android:fontFamily="@font/numeric_bold"/>
+
+    <Button
+        android:id="@+id/btnRight"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/txtScore"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="23dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/double_border"
+        android:text="Button2"
+        android:textSize="30dp"
+        android:fontFamily="@font/numeric_bold"/>
+
+    <TextView
+        android:id="@+id/txtScore"
+        android:layout_width="145dp"
+        android:layout_height="77dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="164dp"
+        android:fontFamily="@font/font_bold"
+        android:text="score: 0"
+        android:textColor="@android:color/black"
+        android:textSize="50dp" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:text="© Samed Bicer"
+        android:textStyle="bold" />
+
+</RelativeLayout>
